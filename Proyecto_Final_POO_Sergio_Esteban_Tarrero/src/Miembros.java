@@ -18,15 +18,16 @@ public class Miembros {
 	private String cargo;
 	private String departamento;
 	
-	private int anosExperiencia;
-	private int coeficienteHabEspacial;
+	private int anosExperiencia; // años experiencia
+	private int coeficienteHabEspacial; // 0-100
+	private int nacimiento; // año de nacimiento
 	
 	boolean esPerceloNo;
 	
 	// Metodos
 	
 	// Constructor
-	public Miembros(String nombre, String apellidos, String cargo, String departamento, int anosExperiencia, int coeficienteHabEspacial)
+	public Miembros(String nombre, String apellidos, String cargo, String departamento, int anosExperiencia, int coeficienteHabEspacial, int nacimiento)
 	{
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -35,6 +36,7 @@ public class Miembros {
 		this.anosExperiencia = anosExperiencia;
 		this.coeficienteHabEspacial = coeficienteHabEspacial;
 		this.esPerceloNo = esPerceloNo;
+		this.nacimiento = nacimiento;
 		
 	}
 
@@ -64,8 +66,14 @@ public class Miembros {
 		return coeficienteHabEspacial;
 	}
 
-	public boolean isEsPerceloNo() {
+	public boolean esPerceloNo() {
 		return esPerceloNo;
 	}
+
+	public int getNacimiento() {
+		return nacimiento;
+	}
+	
+	
 
 }
