@@ -8,6 +8,16 @@
   o Operario (hasta 27 por departamento)
   
  */
-public class Cargos {
+public abstract class Cargos {
 
+	// atributo
+	public static int numeroMaximoPersonas = -1;
+	
+	// recibe un miembro
+	
+	
+	public abstract boolean pasaRequisitos(Miembro candidato);
+	
+
+	
 }
